@@ -3,13 +3,13 @@ setup = function() {
 };
 
 //Background Images
-var caveSceneImage = loadImage("https://www.shutterstock.com/image-vector/vector-illustration-background-forest-scenery-600nw-1807427365.jpg");
+var caveSceneImage = loadImage("https://www.pbs.org/wgbh/americanexperience/media/gallery_images/kennedys_gallery_01.jpg");
 
-var forestImage = loadImage("https://t3.ftcdn.net/jpg/02/50/39/72/360_F_250397206_HuBj2V5oEytcqonzpzum4IjEjtAsZq3g.jpg");
+var forestImage = loadImage("https://www.capecodtimes.com/gcdn/authoring/2014/08/17/NCCT/ghows-CC-ef16e75d-8125-49f0-9c82-669b9db5ea9e-bb0e37cb.jpeg");
 
 //Variable Declarations
 var sceneImage = caveSceneImage;
-var sceneText = "Where do you want to go?  [Press f for forest and c for cave]";
+var sceneText = "Choose which Kennedy room to explore?  [Press l for for left and r for right]";
 
 draw = function(){
     
@@ -17,9 +17,9 @@ draw = function(){
 
 
    if(keyPressed){
-     if(key == 'f'){
+     if(key == 'l'){
        sceneImage = forestImage;   
-       sceneText = "No fox here.  [Press s to restart]";
+       sceneText = "No fox here go back to the front of the house.  [Press s to restart]";
      } 
      if(key == 's'){
       sceneImage = caveSceneImage;
