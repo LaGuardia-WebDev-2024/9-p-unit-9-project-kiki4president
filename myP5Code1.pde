@@ -16,16 +16,18 @@ draw = function(){
     
    drawScene();
 
-
+// if no one here
    if(keyPressed){
      if(key == 'l'){
        sceneImage = forestImage;   
        sceneText = "NO ONES HERE  [Press s to restart]";
      } 
-     if(key == 's'){
+// back to the begining 
+   if(key == 's'){
       sceneImage = caveSceneImage;
       sceneText = "Where do you want to go?  [Press l for left and r for right]";
     } 
+// the scandal 
  if(key == 'r'){
       sceneImage = rimage;
       sceneText = "YOUR IN JFK'S ROOM WITH MARYLIN... scandaleous";
